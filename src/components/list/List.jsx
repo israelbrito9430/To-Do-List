@@ -1,4 +1,4 @@
-export const List = ({listTodos,oninputTodo}) => {
+const List = ({listTodos,oninputTodo}) => {
     const inputTodo = todo => {
         oninputTodo(todo)
     }
@@ -13,3 +13,4 @@ export const List = ({listTodos,oninputTodo}) => {
     )
 }
 
+export default List;

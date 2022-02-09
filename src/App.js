@@ -1,6 +1,6 @@
 import './App.scss';
-import {Search} from './components/search-to-do/Search'
-import {List} from './components/list/List'
+import Search from './components/search-to-do/Search'
+import List from './components/list/List'
 import { useState } from 'react';
 function App() {
   const [todos,setTodos] = useState(['correr','hacer deporte','leer libro'])
@@ -19,10 +19,7 @@ function App() {
   }
   const inputTodo = todo => {
     setinitialTodos(todo)
-    // const index = todos.indexOf(todo)
-    // todos.splice(index,1)
-    // const newTodos = [...todos]
-    // setTodos(newTodos)
+
   }
   return (
     <div className="App">
